@@ -1,0 +1,28 @@
+{
+  "name": "ta-course-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run wd:update",
+    "wd:update": "webdriver-manager update --versions.chrome 2.46",
+    "test:mocha": "protractor ./framework/protractor.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorosz89/ta-course-mocha.git"
+  },
+  "author": "Sandor Orosz EPAM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorosz89/ta-course-mocha/issues"
+  },
+  "homepage": "https://github.com/sorosz89/ta-course-mocha#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.1.2",
+    "protractor": "^5.4.2",
+    "require-it": "^2.0.0"
+  }
+}
