@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run wd:update",
     "wd:update": "webdriver-manager update --versions.chrome 2.46",
-    "test:mocha": "protractor ./framework/protractor.config.js"
+    "test": "protractor ./framework/protractor.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
     "chai-as-promised": "^7.1.1",
     "mocha": "^6.1.2",
     "protractor": "^5.4.2",
-    "require-it": "^2.0.0"
+    "require-it": "^.0.0"
   }
 }

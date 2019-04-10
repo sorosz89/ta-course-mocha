@@ -12,11 +12,12 @@ exports.config = {
     },
     directConnect: true,
     mochaOpts: {
-        reporter: 'spec'
+        reporter: 'spec',
+        timeout: GLOBAL_TIMEOUT
     },
     framework: 'mocha',
     getPageTimeout: GLOBAL_TIMEOUT,
-    chromeDriver: path.join(requireIt.directory('protractor'), 'node_modules', 'webdriver-manager', 'selenium', 'chromedriver_2.46' + (os.platform() === 'win32' ? '.exe' : '')),
+    chromeDriver: path.join(requireIt.directory('webdriver-manager'), 'selenium', 'chromedriver_2.46' + (os.platform() === 'win32' ? '.exe' : '')),
     onPrepare: function () {
         global.GLOBAL_TIMEOUT = GLOBAL_TIMEOUT;
         global.ec = protractor.ExpectedConditions;
