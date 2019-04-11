@@ -5,7 +5,7 @@ const career = new CareerPage();
 
 describe('Open Career Page', () => {
     beforeEach(async () => {
-        return career.load();
+        await career.load();
     });
 
     describe('Page', () => {

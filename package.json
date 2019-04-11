@@ -23,6 +23,6 @@
     "chai-as-promised": "^7.1.1",
     "mocha": "^6.1.2",
     "protractor": "^5.4.2",
-    "require-it": "^.0.0"
+    "require-it": "^1.0.0"
   }
 }

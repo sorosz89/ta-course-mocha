@@ -8,7 +8,7 @@ class CareerPage {
     }
 
     async load() {
-        browser.get('https://epam.com/careers');
+        await browser.get('https://epam.com/careers');
         return browser.wait(() => this.isLogoDisplayed());
     }
 
